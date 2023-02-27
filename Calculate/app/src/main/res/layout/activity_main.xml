@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtno1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Enter your number 1"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:paddingLeft="13dp"
+        android:textColorHint="#636161"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtno2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:hint="Enter your number 2"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:paddingLeft="13dp"
+        android:textColorHint="#636161"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtno3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="Enter your number 3"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:paddingLeft="13dp"
+        android:textColorHint="#636161"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtno4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="Enter your number 4"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:paddingLeft="13dp"
+        android:textColorHint="#636161"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtno5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:hint="Enter your number 5"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:paddingLeft="13dp"
+        android:textColorHint="#636161"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:textColorHint="#472C2C"
+        android:hint="Answer"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+
+
+        <Button
+            android:id="@+id/btncalc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp"
+            android:layout_marginRight="27dp"
+            android:text="Calculate"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btncle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp"
+            android:text="Clear"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+</LinearLayout>

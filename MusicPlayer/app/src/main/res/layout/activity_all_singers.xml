@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".AllSingersActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Have A Good Day"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Music"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Podcasts / Shows"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="Popular"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_17ssp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/imgArijit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:src="@drawable/singer1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Arijit Singh"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/singer2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:text="Guru Randhawa"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:src="@drawable/singer3" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:text="Neha Kakkar"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/singer4" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:text="Lata Mangeshkar"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15ssp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Recommanded"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_17ssp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/singer5" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Arijit Singh"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/singer6" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:text="Honey Singh"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:src="@drawable/singer7" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:text="Jubin Nautiyal"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/singer8" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:text="Tony Kakkar"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15ssp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Top"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_17ssp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/singer9" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Darshan Raval"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/singer10" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:text="Dhvani Bhanushali"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:src="@drawable/singer11" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:text="Shreya Ghoshal"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/singer12" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:text="Badshah"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15ssp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Suggested"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_17ssp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/singer1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Arijit Singh"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/singer9" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:text="Darshan Raval"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:src="@drawable/singer7" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:text="Jubin"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/_120sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/singer12" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:text="Badshah"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_15ssp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

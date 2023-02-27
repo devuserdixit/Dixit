@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:padding="@dimen/_15sdp"
+        android:backgroundTint="@color/white"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round">
+
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/right"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="A Password reset Link has been sent to your Email ID"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:textSize="@dimen/_17ssp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Follow the instructions and the link received in your email to reset your password."
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:textSize="@dimen/_14ssp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnClose"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="@dimen/_107sdp"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_15ssp"
+            android:background="@drawable/round">
+
+
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect with Banks"
+        android:textSize="30sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/sbi"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/call"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnsbi"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:text="Website"
+            android:layout_marginTop="40dp"
+            android:textColor="#BC1313"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/share"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/hdfc"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/call"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnhdfc"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:text="Website"
+            android:layout_marginTop="40dp"
+            android:textColor="#BC1313"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/share"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/icici"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/call"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnicici"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:text="Website"
+            android:layout_marginTop="40dp"
+            android:textColor="#BC1313"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/share"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/kotak"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/call"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnkotak"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:text="Website"
+            android:layout_marginTop="40dp"
+            android:textColor="#BC1313"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/share"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/punjab"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/call"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnpnb"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:text="Website"
+            android:layout_marginTop="40dp"
+            android:textColor="#BC1313"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/share"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/bob"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/call"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnbob"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:text="Website"
+            android:layout_marginTop="40dp"
+            android:textColor="#BC1313"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/share"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/varachha"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/call"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnvarachha"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:text="Website"
+            android:layout_marginTop="40dp"
+            android:textColor="#BC1313"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/share"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/yes"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/call"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnyes"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:text="Website"
+            android:layout_marginTop="40dp"
+            android:textColor="#BC1313"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/share"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/axis"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/call"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnaxis"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:text="Website"
+            android:layout_marginTop="40dp"
+            android:textColor="#BC1313"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/share"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/union"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/call"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnunion"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="18dp"
+            android:text="Website"
+            android:layout_marginTop="40dp"
+            android:textColor="#BC1313"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_height="60dp"
+            android:src="@drawable/share"/>
+
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

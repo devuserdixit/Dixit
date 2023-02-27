@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btndialog1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:text="Dialog 1"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_30ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btndialog2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:text="Dialog 2"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/_40ssp"
+        android:textSize="@dimen/_30ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btndialog3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:text="Dialog 3"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_30ssp"
+        android:layout_marginTop="@dimen/_40ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btndialog4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:text="Dialog 4"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_30ssp"
+        android:layout_marginTop="@dimen/_40ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btndialog5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:text="Dialog 5"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_30ssp"
+        android:layout_marginTop="@dimen/_40ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>

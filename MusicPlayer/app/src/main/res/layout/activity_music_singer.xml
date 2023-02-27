@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/background1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicSingerActivity">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/back"
+            app:tint="@color/white"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:layout_marginLeft="@dimen/_90sdp"
+            android:text="Playing Music"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15ssp" />
+
+        <ImageView
+            app:tint="@color/white"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:layout_marginLeft="@dimen/_85sdp"
+            android:src="@drawable/dot"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300sdp"
+            android:src="@drawable/song1"
+            android:elevation="@dimen/_10sdp"
+            android:padding="@dimen/_15sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Garmi"
+            android:textSize="@dimen/_17ssp"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+
+        <ImageView
+            app:tint="@color/white"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:src="@drawable/share"
+            android:layout_marginLeft="@dimen/_170sdp"/>
+
+        <ImageView
+app:tint="@color/white"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:src="@drawable/download"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+
+        <ImageView
+            app:tint="@color/white"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:src="@drawable/heart"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            app:tint="@color/white"
+            android:layout_marginLeft="@dimen/_93sdp"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_19sdp"
+            android:layout_height="@dimen/_19sdp"
+            android:src="@drawable/musicreturn"/>
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/musicpause"/>
+
+        <ImageView
+            app:tint="@color/white"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:src="@drawable/musicnext"
+            android:layout_marginLeft="@dimen/_20sdp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

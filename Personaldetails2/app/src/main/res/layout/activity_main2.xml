@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background13"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image"
+        android:layout_width="@dimen/_135sdp"
+        android:layout_height="@dimen/_135sdp"
+        android:src="@drawable/myphoto"
+        app:civ_border_width="@dimen/_3sdp"
+        app:civ_border_color="#050E49"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_35sdp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/edtFname"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text=""
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_18ssp" />
+
+            <TextView
+                android:id="@+id/edtLname"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text=""
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_18ssp" />
+
+            <TextView
+                android:id="@+id/edtNumber"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text=""
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_18ssp" />
+
+            <TextView
+                android:id="@+id/edtEmail"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text=""
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_18ssp" />
+
+            <TextView
+                android:id="@+id/edtAddress"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text=""
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_18ssp" />
+
+            <TextView
+                android:id="@+id/rgGender"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text=""
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_18ssp" />
+
+            <TextView
+                android:id="@+id/edthobby"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text=""
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_18ssp" />
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/chkJourney"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:text=""-->
+            <!--            android:textStyle="bold"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:padding="10dp"-->
+            <!--            android:textSize="22sp" />-->
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/chkSpeaking"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:text=""-->
+            <!--            android:textStyle="bold"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:padding="10dp"-->
+            <!--            android:textSize="22sp" />-->
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/chkWriting"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:text=""-->
+            <!--            android:textStyle="bold"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:padding="10dp"-->
+            <!--            android:textSize="22sp" />-->
+
+            <TextView
+                android:id="@+id/rgStatus"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_18ssp" />
+
+            <TextView
+                android:id="@+id/edt10Percentage"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text=""
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_18ssp" />
+
+            <TextView
+                android:id="@+id/edt12Percentage"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text=""
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_18ssp" />
+
+            <TextView
+                android:id="@+id/edtFPercentage"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text=""
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_18ssp" />
+
+            <TextView
+                android:id="@+id/edt10Pass"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_18ssp" />
+
+            <TextView
+                android:id="@+id/edt12Pass"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_18ssp" />
+            <TextView
+                android:id="@+id/edtCPass"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_18ssp" />
+
+            <TextView
+                android:id="@+id/edtExperience"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_18ssp" />
+
+            <TextView
+                android:id="@+id/edtFuture"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_18ssp" />
+
+            <TextView
+                android:id="@+id/edtlanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:text=""
+                android:textSize="@dimen/_18ssp" />
+
+
+            <!--    <TextView-->
+            <!--        android:id="@+id/chkC"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:text=""-->
+            <!--        android:textStyle="bold"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:padding="10dp"-->
+            <!--        android:textSize="22sp" />-->
+
+            <!--    <TextView-->
+            <!--        android:id="@+id/chkCPlus"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:text=""-->
+            <!--        android:textStyle="bold"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:padding="10dp"-->
+            <!--        android:textSize="22sp" />-->
+
+            <!--    <TextView-->
+            <!--        android:id="@+id/chkJava"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:text=""-->
+            <!--        android:textStyle="bold"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:padding="10dp"-->
+            <!--        android:textSize="22sp" />-->
+
+            <!--    <TextView-->
+            <!--        android:id="@+id/chkAndroid"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:text=""-->
+            <!--        android:textStyle="bold"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:padding="10dp"-->
+            <!--        android:textSize="22sp" />-->
+
+            <!--    <TextView-->
+            <!--        android:id="@+id/chkKotlin"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:text=""-->
+            <!--        android:textStyle="bold"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:padding="10dp"-->
+            <!--        android:textSize="22sp" />-->
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/chkPhp"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:text=""-->
+            <!--            android:textStyle="bold"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:padding="10dp"-->
+            <!--            android:textSize="22sp" />-->
+
+            <!--    <TextView-->
+            <!--        android:id="@+id/chkHtml"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:text=""-->
+            <!--        android:textStyle="bold"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:padding="10dp"-->
+            <!--        android:textSize="22sp" />-->
+
+            <!--    <TextView-->
+            <!--        android:id="@+id/chkCss"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:textStyle="bold"-->
+            <!--        android:text=""-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:padding="10dp"-->
+            <!--        android:textSize="22sp" />-->
+
+            <!--    <TextView-->
+            <!--        android:id="@+id/chkWeb"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:text=""-->
+            <!--        android:textStyle="bold"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:padding="10dp"-->
+            <!--        android:textSize="22sp" />-->
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
