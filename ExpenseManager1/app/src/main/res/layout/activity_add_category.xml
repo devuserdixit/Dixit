@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddCategory_Activity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#19688B"
+        android:gravity="center">
+
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgback"
+                android:layout_width="26.00dp"
+                android:layout_height="26.00dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/back"/>
+
+            <TextView
+                android:layout_width="234.00dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65.00dp"
+                android:gravity="center_vertical"
+                android:text="Add Category"
+                android:textColor="@color/white"
+                android:textSize="23.40sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/imgright"
+                android:layout_width="22.10dp"
+                android:layout_height="22.10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="26.00dp"
+                android:src="@drawable/right"/>
+        </Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardPreventCornerOverlap="true"
+        app:cardCornerRadius="13.00dp"
+        android:layout_margin="6.50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginHorizontal="6.50dp"
+                android:text="Category"
+                android:textColor="#19688B"
+                android:textSize="19.50dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtcategory"
+                android:layout_marginHorizontal="6.50dp"
+                android:hint="CATEGORY"
+                android:textSize="22.10sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnadd"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="19.50sp"
+                android:text="ADD"
+                android:background="#19688B"
+                android:paddingHorizontal="65.00dp"
+                android:layout_marginBottom="13.00dp"
+                android:layout_marginTop="130.00dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

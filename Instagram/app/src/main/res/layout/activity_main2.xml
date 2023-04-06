@@ -9,6 +9,8 @@
 
     <TextView
         android:id="@+id/txtname"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/_15sdp"
@@ -20,4 +22,49 @@
         android:layout_height="@dimen/_400sdp"
         android:layout_marginTop="@dimen/_15sdp" />
 
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:src="@drawable/heart"/>
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:src="@drawable/chatt"/>
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:src="@drawable/send"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="100 Likes"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_15sdp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View all comments"
+        android:layout_marginLeft="@dimen/_15sdp"/>
+
 </LinearLayout>
+

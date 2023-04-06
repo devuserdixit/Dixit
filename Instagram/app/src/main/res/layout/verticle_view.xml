@@ -26,6 +26,13 @@
          android:layout_marginLeft="@dimen/_10sdp"
          android:gravity="center" />
 
+        <ImageView
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_230sdp"
+            android:src="@drawable/dots"/>
+
     </LinearLayout>
 
     <ImageView
@@ -37,18 +44,30 @@
 
     <LinearLayout
         android:layout_marginTop="@dimen/_10sdp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <ImageView
             android:layout_width="@dimen/_16sdp"
-            android:layout_height="@dimen/_16sdp"
+            android:layout_height="@dimen/_20sdp"
             android:layout_marginLeft="@dimen/_15sdp"
             android:src="@drawable/heart"/>
 
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:src="@drawable/chatt"/>
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:src="@drawable/send"/>
+
     </LinearLayout>
     <LinearLayout
-        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
