@@ -1,17 +1,22 @@
 package com.example.shayariapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.widget.Adapter
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.shayariapplication.databinding.ActivityDisplayCategoryBinding
 
 class DisplayCategoryActivity : AppCompatActivity() {
 
-    lateinit var binding : ActivityDisplayCategoryBinding
-    lateinit var dbD : MyDatabase
+    lateinit var binding: ActivityDisplayCategoryBinding
+    lateinit var dbD: MyDatabase
 
     var shayariList = ArrayList<DisplayCategoryModelClass>()
+    var cate_id : Int = 0
 
-    lateinit var adapter : CategoryAdapter
+    lateinit var adapter: DisplayCategoryAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDisplayCategoryBinding.inflate(layoutInflater)
@@ -23,14 +28,41 @@ class DisplayCategoryActivity : AppCompatActivity() {
     }
 
     private fun initview() {
-        var categoryName : String? = intent.getStringExtra("Title")
+        binding.imglike.setOnClickListener{
+            var favorite = Intent(this,FavoriteActivity::class.java)
+            startActivity(favorite)
+        }
+        binding.imgback.setOnClickListener{
+            onBackPressed()
+        }
+
+        var categoryName: String? = intent.getStringExtra("Title")
         binding.txtDisplayTitle.text = categoryName
 
-        var c_ID = intent.getIntExtra("Id",0)
-        shayariList = dbD.ShatariData(c_ID)
+        cate_id = intent.getIntExtra("Id", 0)
 
-        adapter = DisplayCategoryModelClass(shayariList,{
-            var i =
-        })
+        adapter = DisplayCategoryAdapter(
+             shayariList,
+            {
+                var i = Intent(this, ShayariDisplayActivity::class.java)
+                i.putExtra("ShayariItem", it.Shayari_item)
+                startActivity(i)
+                finish()
+            },
+            { Shayari_id, fav ->
+                dbD.updateRecord(Shayari_id, fav)
+            })
+
+        var manager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        binding.rcvCategoryData.layoutManager = manager
+        binding.rcvCategoryData.adapter = adapter
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+        shayariList = dbD.ShayariData(cate_id)
+        adapter.updatelist(shayariList)
+        Log.e("TAG", "onResume: "+cate_id)
     }
 }

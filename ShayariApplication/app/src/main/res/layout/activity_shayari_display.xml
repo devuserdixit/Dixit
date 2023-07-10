@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ShayariDisplayActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EACA97">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="26.00dp"
+            android:layout_height="26.00dp"
+            android:layout_gravity="start"
+            android:layout_marginHorizontal="26.00dp"
+            android:src="@drawable/back"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/txtDisplayTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18ssp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="13.00dp"
+        app:cardCornerRadius="13.00dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/Screenshot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgShow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/txtShayariDisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginHorizontal="26.00dp"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/black"
+                    android:textSize="19.50sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="bottom"
+            android:background="#60E6C9C9"
+            android:weightSum="4">
+
+            <ImageView
+                android:id="@+id/imgCopy"
+                android:layout_width="@dimen/_23sdp"
+                android:layout_height="@dimen/_23sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/copy" />
+
+            <ImageView
+                android:id="@+id/imgDownload"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_21sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/download" />
+
+            <ImageView
+                android:id="@+id/imgshare"
+                android:layout_width="@dimen/_21sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/share" />
+
+            <ImageView
+                android:id="@+id/imgAdd"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_29sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/image" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

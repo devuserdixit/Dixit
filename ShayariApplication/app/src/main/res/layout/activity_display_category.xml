@@ -7,22 +7,44 @@
     android:layout_height="match_parent"
     tools:context=".DisplayCategoryActivity">
 
-    <androidx.appcompat.widget.Toolbar
+   <LinearLayout
+       android:weightSum="8"
         android:background="#875A17"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="@dimen/_45sdp">
+
+       <ImageView
+           android:id="@+id/imgback"
+           android:layout_gravity="center"
+           android:layout_weight="1"
+           android:src="@drawable/back"
+           android:layout_width="@dimen/_20sdp"
+           android:layout_height="@dimen/_20sdp"/>
 
         <TextView
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="6"
             android:id="@+id/txtDisplayTitle"
-            android:layout_gravity="center"
+            android:gravity="center"
+            tools:text="Shayari"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Shayari"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="@dimen/_20ssp"/>
 
-    </androidx.appcompat.widget.Toolbar>
+       <ImageView
+           android:layout_weight="0.5"
+           android:id="@+id/imglike"
+           android:layout_gravity="center"
+           app:tint="@color/white"
+           android:src="@drawable/heart"
+           android:layout_width="@dimen/_20sdp"
+           android:layout_height="@dimen/_20sdp"/>
+
+
+
+   </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_marginTop="@dimen/_10sdp"

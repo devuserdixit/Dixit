@@ -78,7 +78,7 @@ class MyDatabase(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB
     }
 
     fun readData(): ArrayList<CategoryModalClass> {
-        var list = ArrayList<CategoryModalClass>()
+        val list = ArrayList<CategoryModalClass>()
         val db = readableDatabase
         val sql = "select * from CategoryTb"
         val c = db.rawQuery(sql, null)
@@ -97,10 +97,10 @@ class MyDatabase(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB
         return list
     }
 
-    fun ShatariData(c_ID:Int): ArrayList<DisplayCategoryModelClass> {
-        var shayariList = ArrayList<DisplayCategoryModelClass>()
+    fun ShayariData(c_ID : Int): ArrayList<DisplayCategoryModelClass> {
+        val shayariList = ArrayList<DisplayCategoryModelClass>()
         val db1 = readableDatabase
-        val sql1 = "select * from Shayari_Tb where Category Id = $c_ID"
+        val sql1 = "select * from ShayariTb where CategoryId ='$c_ID'"
         val c = db1.rawQuery(sql1, null)
         if (c.count > 0) {
             c.moveToFirst()
@@ -108,9 +108,10 @@ class MyDatabase(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB
                 var id = c.getInt(0)
                 var shayari = c.getString(1)
                 var category_Id = c.getInt(2)
+                var fav = c.getInt(3)
 
                 Log.e(TAG, "readData:==> $id   $shayari")
-                var shayarimodal = DisplayCategoryModelClass(id, shayari,category_Id)
+                var shayarimodal = DisplayCategoryModelClass(id, shayari,category_Id,fav)
 
                 shayariList.add(shayarimodal)
             } while (c.moveToNext())
@@ -118,7 +119,33 @@ class MyDatabase(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB
         return shayariList
     }
 
+    fun updateRecord(Shayari_id : Int,fav : Int){
+        val update = writableDatabase
+        val updateSql = "update ShayariTb set Favorite='$fav' where ShayariId ='$Shayari_id'"
+        update.execSQL(updateSql)
+    }
 
+    fun FavoriteDisplayRecord() : ArrayList<FavoriteModalClass>{
+        var DisplayList = ArrayList<FavoriteModalClass>()
+
+        val dbF = readableDatabase
+        val SqlF = "Select * from ShayariTb where Favorite = 1"
+        val c = dbF.rawQuery(SqlF,null)
+        if (  c.moveToFirst()){
+
+            do {
+                var Shayari_id = c.getInt(0)
+                var Shayari = c.getString(1)
+                var fav = c.getInt(2)
+
+                Log.e("TAG", "FavoriteDisplayRecord: $Shayari_id $Shayari" )
+                var shayarimodal = FavoriteModalClass(Shayari_id,Shayari,fav)
+
+                DisplayList.add(shayarimodal)
+            }while (c.moveToNext())
+        }
+        return DisplayList
+    }
     companion object {
         private const val TAG = "MyDatabase"
         private const val DB_NAME = "Shayari Database.db"

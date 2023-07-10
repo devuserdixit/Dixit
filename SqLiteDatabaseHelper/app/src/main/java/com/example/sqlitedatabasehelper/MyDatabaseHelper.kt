@@ -12,10 +12,9 @@ class MyDatabaseHelper(context : Context) : SQLiteOpenHelper(context,"StudentDb"
     override fun onCreate(db : SQLiteDatabase?) {
         var sql = "create table studentTb (student_id integer primary key Autoincrement,name text,Mobile text,gender text,fees integer)"
         db?.execSQL(sql)
-
     }
 
-    override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int) {
+    override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int)       {
     }
 
    fun insertRecord(name: String, mobile: String, gender: String, fees: String){
