@@ -27,7 +27,7 @@
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_marginHorizontal="@dimen/_20sdp"
-                tools:text="nnnnnnnnnnnnnnnnnnnnnnnnnnnmn"
+                tools:text="Test(Text)"
                 android:fontFamily="monospace"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
@@ -49,6 +49,7 @@
                 android:layout_height="@dimen/_22sdp"/>
 
             <ImageView
+                android:id="@+id/imgCopy"
                 android:layout_gravity="center"
                 android:src="@drawable/copy"
                 android:layout_weight="1"
@@ -56,6 +57,7 @@
                 android:layout_height="@dimen/_22sdp"/>
 
             <ImageView
+                android:id="@+id/imgDownload"
                 android:layout_gravity="center"
                 android:layout_width="@dimen/_22sdp"
                 android:layout_height="@dimen/_22sdp"
@@ -63,6 +65,7 @@
                 android:src="@drawable/download" />
 
             <ImageView
+                android:id="@+id/imgShare"
                 android:layout_gravity="center"
                 android:src="@drawable/share"
                 android:layout_weight="1"

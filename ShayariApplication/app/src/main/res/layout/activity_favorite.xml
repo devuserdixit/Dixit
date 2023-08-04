@@ -15,18 +15,27 @@
 
         <ImageView
             android:id="@+id/imgBack"
-            app:tint="@color/black"
             android:layout_width="26.00dp"
             android:layout_height="26.00dp"
             android:layout_gravity="start"
             android:layout_marginHorizontal="26.00dp"
-            android:src="@drawable/back"/>
+            android:src="@drawable/back"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favourite"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
 
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcvfavorite"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

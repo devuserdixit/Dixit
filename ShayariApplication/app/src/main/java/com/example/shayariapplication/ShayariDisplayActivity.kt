@@ -68,14 +68,14 @@ class ShayariDisplayActivity : AppCompatActivity() {
         }
         binding.imgDownload.setOnClickListener {
             val z: View = binding.Screenshot
-            z.setDrawingCacheEnabled(true)
+            z.isDrawingCacheEnabled = true
             val totalHeight: Int = z.getHeight()
             val totalWidth: Int = z.getWidth()
             z.layout(0, 0, totalWidth, totalHeight)
             z.buildDrawingCache(true)
-            val bm: Bitmap = Bitmap.createBitmap(z.getDrawingCache())
-            z.setDrawingCacheEnabled(false)
-            Toast.makeText(this@ShayariDisplayActivity, "Taking Screenshot...", Toast.LENGTH_SHORT)
+            val bm: Bitmap = Bitmap.createBitmap(z.drawingCache)
+            z.isDrawingCacheEnabled = false
+            Toast.makeText(this@ShayariDisplayActivity, "Download Successfully", Toast.LENGTH_SHORT)
                 .show()
             MediaStore.Images.Media.insertImage(contentResolver, bm, null, null)
 

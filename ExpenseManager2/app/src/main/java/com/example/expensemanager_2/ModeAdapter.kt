@@ -29,11 +29,7 @@ class ModeAdapter(var mode : ArrayList<String>,var invoke :((String) ->Unit)) :
             pos = position
             notifyDataSetChanged()
         }
-        if (position == pos){
-            holder.btnrbmode.isChecked = true
-        }else{
-            holder.btnrbmode.isChecked = false
-        }
+        holder.btnrbmode.isChecked = position == pos
     }
 
     override fun getItemCount(): Int {
