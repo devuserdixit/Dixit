@@ -40,7 +40,7 @@ class DiscoverFragment : Fragment() {
         binding = FragmentDiscoverBinding.inflate(layoutInflater, container, false)
 
 
-//        CulturalExperiences()
+        CulturalExperiences()
         CulturalSights()
         TravelMemories()
         CultureArroundtheWorld()

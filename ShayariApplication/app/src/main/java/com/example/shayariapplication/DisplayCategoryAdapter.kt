@@ -19,9 +19,9 @@ class DisplayCategoryAdapter(
         var layout: CardView = view.findViewById(R.id.layout)
         var txtshayari: TextView = view.findViewById(R.id.txtshayari)
         var imglike : ImageView = view.findViewById(R.id.imglike)
-        var imgCopy : ImageView = view.findViewById(R.id.imgCopy)
-        var imgDownload : ImageView = view.findViewById(R.id.imgDownload)
-        var imagShare : ImageView = view.findViewById(R.id.imgShare)
+//        var imgCopy : ImageView = view.findViewById(R.id.imgCopy)
+//        var imgDownload : ImageView = view.findViewById(R.id.imgDownload)
+//        var imagShare : ImageView = view.findViewById(R.id.imgShare)
 
     }
 

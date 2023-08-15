@@ -24,13 +24,6 @@ class SignUpActivity : AppCompatActivity() {
     private fun SignUp() {
         firebaseAuth = FirebaseAuth.getInstance()
 
-//        val sharedPreferences = getSharedPreferences("MySharedPref", MODE_PRIVATE)
-//        if (sharedPreferences.getBoolean("isLogin", false) == true) {
-//            var i = Intent(this, MainActivity::class.java)
-//            startActivity(i)
-//            finish()
-//        }
-
         binding.textView.setOnClickListener {
             val intent = Intent(this, SignInActivity::class.java)
             startActivity(intent)
@@ -47,12 +40,6 @@ class SignUpActivity : AppCompatActivity() {
                     firebaseAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener {
                         if (it.isSuccessful) {
                             val intent = Intent(this, SignInActivity::class.java)
-
-//                            val myEdit: SharedPreferences.Editor = sharedPreferences.edit()
-//                            myEdit.putBoolean("isLogin", true)
-//                            myEdit.putString("username", email)
-//                            myEdit.putString("password", pass)
-//                            myEdit.commit()
                             startActivity(intent)
                         } else {
                             Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()

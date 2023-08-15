@@ -10,17 +10,21 @@ import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
-class ProductAdapter(var context: Context, var list: ArrayList<ProductsItem>?,var OnClick : (ProductsItem)->Unit) : RecyclerView.Adapter<ProductAdapter.MyViewHolder>() {
+class ProductAdapter(
+    var context: Context,
+    var list: ArrayList<ProductsItem>?,
+    var OnClick: (ProductsItem) -> Unit
+) : RecyclerView.Adapter<ProductAdapter.MyViewHolder>() {
     class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        var txtid : TextView = view.findViewById(R.id.txtid)
-        var txttitle : TextView = view.findViewById(R.id.txttitle)
-        var txtdescription : TextView = view.findViewById(R.id.txtdescription)
-        var txtprice : TextView = view.findViewById(R.id.txtprice)
-        var txtrating : TextView = view.findViewById(R.id.txtrating)
-        var txtstock : TextView = view.findViewById(R.id.txtstock)
-        var txtbrand : TextView = view.findViewById(R.id.txtbrand)
-        var imgproduct : ImageView = view.findViewById(R.id.imgproduct)
-        var crdproduct : CardView = view.findViewById(R.id.crdproduct)
+        var txtid: TextView = view.findViewById(R.id.txtid)
+        var txttitle: TextView = view.findViewById(R.id.txttitle)
+        var txtdescription: TextView = view.findViewById(R.id.txtdescription)
+        var txtprice: TextView = view.findViewById(R.id.txtprice)
+        var txtrating: TextView = view.findViewById(R.id.txtrating)
+        var txtstock: TextView = view.findViewById(R.id.txtstock)
+        var txtbrand: TextView = view.findViewById(R.id.txtbrand)
+        var imgproduct: ImageView = view.findViewById(R.id.imgproduct)
+        var crdproduct: CardView = view.findViewById(R.id.crdproduct)
 
     }
 
@@ -44,10 +48,12 @@ class ProductAdapter(var context: Context, var list: ArrayList<ProductsItem>?,va
         holder.txtstock.text = list!![position].stock.toString()
         holder.txtbrand.text = list!![position].brand
 
-        holder.crdproduct.setOnClickListener{
+        holder.crdproduct.setOnClickListener {
             OnClick.invoke(list!![position])
         }
 
-        Glide.with(context).load("https://i.dummyjson.com/data/products/${list!![position].id}/thumbnail.jpg").placeholder(R.drawable.place).into(holder.imgproduct)
+        Glide.with(context)
+            .load("https://i.dummyjson.com/data/products/${list!![position].id}/thumbnail.jpg")
+            .placeholder(R.drawable.place).into(holder.imgproduct)
     }
 }

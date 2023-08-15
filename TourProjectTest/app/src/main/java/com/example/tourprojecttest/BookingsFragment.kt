@@ -11,7 +11,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.example.tourprojecttest.databinding.FragmentBookingsBinding
-import com.example.tourprojecttest.databinding.FragmentDiscoverBinding
 import com.razorpay.Checkout
 import com.razorpay.PaymentResultListener
 import org.json.JSONException

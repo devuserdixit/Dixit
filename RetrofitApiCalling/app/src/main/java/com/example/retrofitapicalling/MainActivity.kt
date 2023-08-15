@@ -13,7 +13,6 @@ import com.example.retrofitapicalling.databinding.ActivityMainBinding
 import com.journaldev.retrofitintro.APIClient
 import retrofit2.Call
 import retrofit2.Response
-import javax.security.auth.callback.Callback
 
 class MainActivity : AppCompatActivity() {
 
